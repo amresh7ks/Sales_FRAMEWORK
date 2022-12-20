@@ -13,6 +13,7 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 import com.mysql.cj.jdbc.Driver;
 
 public class DatabaseUtiltiy {
+	//
 	private Connection connection;
 	private String dbuser;
 	public List<String> getDataFromDataBse(String query,String ColumnName) throws SQLException{
