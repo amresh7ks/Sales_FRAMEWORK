@@ -69,7 +69,8 @@ public class Supplier {
 		driver.findElement(By.name("phonenumber")).sendKeys("997776666");
 		//cti.click();
 		
-		//h5[text()='Add Supplier']/../../descendant::button[@class='btn btn-success']
+		driver.findElement(By.xpath("//h5[text()='Add Supplier']/../../descendant::button[@class='btn btn-success']")).click();
+		
 
 	}
 

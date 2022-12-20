@@ -16,6 +16,8 @@ public class CommonPage {
 	private  WebElement customer;
 	@FindBy(xpath ="//span[text()='Supplier']" )
 	private WebElement Supplier;
+	@FindBy(xpath="//span[text()='Inventory']")
+	private WebElement inventory;
 	@FindBy(xpath="//i[@class='fas fa-fw fa-plus']")
 	private  WebElement save;
 	@FindBy (xpath="//h5[text()='Add Employee']/../following-sibling::div/descendant::button[@type='submit' and @class='btn btn-success']")
@@ -32,6 +34,10 @@ public class CommonPage {
 	}
 	public void clickSupplier() {
 		Supplier.click();
+	}
+	public void clickInventory() {
+		inventory.click();
+		
 	}
 	public void save(WebDriverUtility webDriverUtility) {
 		webDriverUtility.acceptAlert();
